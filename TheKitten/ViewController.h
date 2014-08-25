@@ -10,6 +10,13 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)signIn:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *userNameField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordField;
+@property (weak, nonatomic) IBOutlet UIButton *signInButton;
+@property (weak, nonatomic) IBOutlet UILabel *invalidCredsLabel;
+- (IBAction)userNameChanged:(id)sender;
+- (IBAction)passwordChanged:(id)sender;
 
 @end
 
