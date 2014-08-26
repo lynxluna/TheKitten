@@ -37,7 +37,6 @@
                                 <variation key="widthClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="305" y="99" width="190" height="40"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact"/>
                                 <connections>
                                     <action selector="userNameChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="BgB-gW-lr2"/>
                                 </connections>
@@ -62,12 +61,11 @@
                                 <variation key="widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="305" y="179" width="190" height="0.0"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact"/>
                                 <connections>
                                     <action selector="passwordChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Ey9-NJ-5pc"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLf-jC-2sS">
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLf-jC-2sS">
                                 <rect key="frame" x="263" y="311" width="74" height="42"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
                                 <state key="normal" title="Sign In">
@@ -77,7 +75,7 @@
                                     <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u6V-iW-pEB"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid Credentials!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZ5-w3-yLV">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Invalid Credentials!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZ5-w3-yLV">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -146,15 +144,12 @@
                             <constraint firstItem="KEi-pd-bNG" firstAttribute="top" secondItem="Hxv-IG-snd" secondAttribute="bottom" id="81a-od-Gbj"/>
                             <constraint firstItem="Hxv-IG-snd" firstAttribute="leading" secondItem="LiH-sn-PcH" secondAttribute="leadingMargin" constant="-20" id="k6h-La-gDM"/>
                         </constraints>
-                        <variation key="heightClass=regular"/>
-                        <variation key="widthClass=compact"/>
                         <variation key="heightClass=compact-widthClass=regular">
                             <mask key="constraints">
                                 <include reference="47G-E2-7bn"/>
                                 <include reference="k6h-La-gDM"/>
                             </mask>
                         </variation>
-                        <variation key="heightClass=regular-widthClass=compact"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                 </viewController>

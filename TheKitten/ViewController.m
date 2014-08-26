@@ -38,11 +38,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (BOOL) isUserNameValid {
+- (BOOL) isUserNameValid: (NSString*) text {
   return self.userNameField.text.length > 3;
 }
 
-- (BOOL) isPasswordValid {
+- (BOOL) isPasswordValid: (NSString*) text {
   return self.passwordField.text.length > 3;
 }
 
@@ -69,12 +69,12 @@
                            }];
 }
 - (IBAction)userNameChanged:(id)sender {
-  self.userNameValid = [self isUserNameValid];
+  self.userNameValid = [self isUserNameValid: self.userNameField.text];
   [self updateUIState];
 }
 
 - (IBAction)passwordChanged:(id)sender {
-  self.passwordValid = [self isPasswordValid];
+  self.passwordValid = [self isPasswordValid: self.passwordField.text];
   [self updateUIState];
 }
 @end
